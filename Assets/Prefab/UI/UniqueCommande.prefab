@@ -542,6 +542,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69b46a2420b0bd43acc3312fa57113c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  actualTable: {fileID: 0}
+  icon: {fileID: 6440969683903938857}
+  tableNumber: {fileID: 6557194194204666689}
+  sliderClientWaint: {fileID: 7048262338117689592}
 --- !u!1 &7666195712678803407
 GameObject:
   m_ObjectHideFlags: 0

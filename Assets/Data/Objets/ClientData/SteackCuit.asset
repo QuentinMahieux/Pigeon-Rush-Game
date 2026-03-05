@@ -21,3 +21,4 @@ MonoBehaviour:
   - numberIngredient: 0
     actualNumberIngredient: 0
     ingredient: {fileID: 11400000, guid: 753b03f5fac8bb944a8c13c089efb163, type: 2}
+  score: 5

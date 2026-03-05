@@ -71,6 +71,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f012221dcacc807479b123d8ab541b69, type: 2}
+  - {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -175,5 +176,3 @@ MonoBehaviour:
   meshRenderer: {fileID: 1378257315902094137}
   isStorage: 0
   foodDataKeep: {fileID: 3454647582579838424}
-  isNPC: 0
-  npcManager: {fileID: 0}

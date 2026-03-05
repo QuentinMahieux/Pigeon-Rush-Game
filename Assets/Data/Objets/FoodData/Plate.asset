@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff660c81e9c52f4287cc383cc146271, type: 3}
   m_Name: Plate
   m_EditorClassIdentifier: Assembly-CSharp::FoodData
-  name: Plate Populaire
+  name: Assiete
   prefab: {fileID: 1049209609689035176, guid: d47e7d34e3c1b9345825660d5f924700, type: 3}

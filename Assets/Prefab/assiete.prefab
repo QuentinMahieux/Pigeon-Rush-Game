@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5096c7707ad786f48b698d3cff3b4454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlateFood
-  speed: 5
+  speed: 8.46
   rb: {fileID: 4276067188603305355}
   boxCollider: {fileID: 2544260026797430169}
   foodData: {fileID: 11400000, guid: c3443fd99c3adc34c956695d82aa4bb2, type: 2}
@@ -191,8 +191,6 @@ MonoBehaviour:
   meshRenderer: {fileID: 4121092377072203577}
   isStorage: 0
   foodDataKeep: {fileID: 151511454762121822}
-  isNPC: 0
-  npcManager: {fileID: 0}
   listVisualInterractions:
   - {fileID: 7204189425398649104}
 --- !u!1 &1049209609689035176
@@ -334,8 +332,6 @@ MonoBehaviour:
   meshRenderer: {fileID: 7251004283377967337}
   isStorage: 0
   foodDataKeep: {fileID: 151511454762121822}
-  isNPC: 0
-  npcManager: {fileID: 0}
 --- !u!1 &7215054104796679509
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class FoodCuite : DefaultFood
 {
-    [Header("Cooking Food")]
-    public MeshRenderer meshRenderer;
+    [Header("Cooking Food")] 
+    public string tagTransformator = "Baking Tray";
     public GameObject newFoodPrefab;
 
     public float timeToHot;
@@ -19,7 +19,7 @@ public class FoodCuite : DefaultFood
     private void OnCollisionStay(Collision collision)
     {
         base.OnCollisionEnter(collision);
-        if (collision.gameObject.CompareTag("Baking Tray"))
+        if (collision.gameObject.CompareTag(tagTransformator))
         {
             isCooking = true;
         }
@@ -27,7 +27,7 @@ public class FoodCuite : DefaultFood
 
     private void OnCollisionExit(Collision other)
     {
-        if (isCooking && !other.gameObject.CompareTag("Baking Tray"))
+        if (isCooking && !other.gameObject.CompareTag(tagTransformator))
         {
             isCooking = false;
         }

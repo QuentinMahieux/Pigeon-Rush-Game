@@ -38,7 +38,7 @@ public class PlayerHand : MonoBehaviour
 
         if (isStorage)
         {
-            GameObject newFoodGameObject = Instantiate(food.gameObject, hand, true);
+            GameObject newFoodGameObject = Instantiate(food.foodDataKeep.foodData.prefab, hand, true);
             VisualInterraction newFood = newFoodGameObject.GetComponent<VisualInterraction>();
             newFoodGameObject.transform.localPosition = Vector3.zero;
             

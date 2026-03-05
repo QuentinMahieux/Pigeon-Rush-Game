@@ -14,6 +14,9 @@ public class Table : MonoBehaviour
     private float remainingTime = 0f;
     private bool isWaiting = false;
 
+    [Header("End Repas")] 
+    public Transform spawnPlateSale;
+    public FoodData plateSale;
     
     [Header("Visual elements")] 
     public TMP_Text textNumberTable;
@@ -62,8 +65,15 @@ public class Table : MonoBehaviour
         actualClientData = null;
         commandDontListen.SetActive(false);
         LevelManager.instance.tableLibres.Add(this);
+        CommandeManager.instance.RemoveCommande(this);
         
         isWaiting = false;
+
+        if (score > 0)
+        {
+            Instantiate(plateSale.prefab, spawnPlateSale.position, spawnPlateSale.rotation);
+
+        }
     }
 
     void OnCollisionEnter(Collision collision)

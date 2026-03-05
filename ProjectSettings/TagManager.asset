@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Baking Tray
   - DontClimb
+  - Lavabeau
   layers:
   - Default
   - TransparentFX

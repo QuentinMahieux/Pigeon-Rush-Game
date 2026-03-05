@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03b9ccee3e623140ba5c6e449f73220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultFood
-  speed: 5
+  speed: 8.46
   rb: {fileID: 5066860342923276213}
   boxCollider: {fileID: 2572482039641103167}
   foodData: {fileID: 11400000, guid: 919d01baf9d777b429ebff4ef45ed3ce, type: 2}
@@ -190,5 +190,3 @@ MonoBehaviour:
   meshRenderer: {fileID: 615051376055715989}
   isStorage: 0
   foodDataKeep: {fileID: 2629910770732384106}
-  isNPC: 0
-  npcManager: {fileID: 0}

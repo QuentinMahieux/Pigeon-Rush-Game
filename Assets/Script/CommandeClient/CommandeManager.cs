@@ -5,7 +5,6 @@ public class CommandeManager : MonoBehaviour
 {
     public static CommandeManager instance;
     
-    public List<Table> commandeTables;
     public GameObject allUniqueCommande;
     [SerializeField] private List<UniqueCommandTable> uniqueCommandTables = new List<UniqueCommandTable>();
     void Awake()
@@ -33,8 +32,27 @@ public class CommandeManager : MonoBehaviour
 
     public void AddCommande(Table newTable)
     {
-        commandeTables.Add(newTable);
-        uniqueCommandTables[commandeTables.Count].gameObject.SetActive(true);
-        uniqueCommandTables[commandeTables.Count].InstantiateCommandTable(commandeTables[^1]);
+        for (int i = 0; i < uniqueCommandTables.Count; i++)
+        {
+            uniqueCommandTables[i].gameObject.SetActive(true);
+            if (uniqueCommandTables[i].InstantiateCommandTable(newTable))
+            {
+                uniqueCommandTables[i].InstantiateCommandTable(newTable);
+                return;
+            }
+            
+        }
+    }
+
+    public void RemoveCommande(Table newTable)
+    {
+        for (int i = 0; i < uniqueCommandTables.Count; i++)
+        {
+            if (uniqueCommandTables[i].actualTable == newTable)
+            {
+                uniqueCommandTables[i].CloseCommand();
+                return;
+            }
+        }
     }
 }

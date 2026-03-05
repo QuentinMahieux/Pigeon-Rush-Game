@@ -13,9 +13,8 @@ public class VisualInterraction : MonoBehaviour
     public bool isStorage = false;
     public DefaultFood foodDataKeep;
 
-    [Header("NPC Settings")] 
-    public bool isNPC;
-    public NPCManager npcManager;
+    private bool isNPC;
+    private NPCManager npcManager;
     
     
 
