@@ -71,14 +71,14 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f139cb0a12cd2114ab54335e1f7bee67, type: 2}
+      objectReference: {fileID: 2100000, guid: 0c91b5a38d6089e42a53e671ebb18394, type: 2}
     - target: {fileID: -7511558181221131132, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
     - target: {fileID: 919132149155446097, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       propertyPath: m_Name
-      value: SteackCuit
+      value: SteackBrule
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       propertyPath: m_TagString
@@ -96,7 +96,7 @@ PrefabInstance:
       addedObject: {fileID: 5066860342923276213}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8748952141316811046}
+      addedObject: {fileID: 2629910770732384106}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4b2ba035ba63de9409127a7c68dd712a, type: 3}
       insertIndex: -1
       addedObject: {fileID: -5207085853992089171}
@@ -159,7 +159,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8748952141316811046
+--- !u!114 &2629910770732384106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,18 +168,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407908730586343744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 769fb7dc887ed4d42836b5dfee7f49ce, type: 3}
+  m_Script: {fileID: 11500000, guid: b03b9ccee3e623140ba5c6e449f73220, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FoodCuite
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultFood
   speed: 5
   rb: {fileID: 5066860342923276213}
   boxCollider: {fileID: 2572482039641103167}
-  foodData: {fileID: 11400000, guid: 3fb52e0a65e061e4aada8c0740330dc2, type: 2}
-  meshRenderer: {fileID: 615051376055715989}
-  newFoodPrefab: {fileID: 1407908730586343744, guid: 52ecf2bb045ef2c47ab67e36e6cb84d6, type: 3}
-  timeToHot: 4
-  actualTimeToHot: 0
-  isCooking: 0
+  foodData: {fileID: 11400000, guid: 919d01baf9d777b429ebff4ef45ed3ce, type: 2}
 --- !u!114 &-5207085853992089171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualInterraction
   meshRenderer: {fileID: 615051376055715989}
   isStorage: 0
-  foodDataKeep: {fileID: 8748952141316811046}
+  foodDataKeep: {fileID: 0}
   isNPC: 0
   npcManager: {fileID: 0}

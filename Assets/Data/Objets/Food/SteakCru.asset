@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SteakCru
   m_EditorClassIdentifier: Assembly-CSharp::FoodData
   name: Viande Cru
-  prefab: {fileID: 8323963127625260304, guid: f393ada2c01bc4443b304f29bff354ed, type: 3}
+  prefab: {fileID: 1407908730586343744, guid: 5c768c62af435b5449f55a8be660982b, type: 3}

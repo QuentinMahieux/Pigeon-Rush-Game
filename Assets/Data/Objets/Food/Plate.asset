@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Plate
   m_EditorClassIdentifier: Assembly-CSharp::FoodData
   name: Plate Populaire
-  prefab: {fileID: 3403779630814632550, guid: 3871a5280a9e7ba4686f4aa209801132, type: 3}
+  prefab: {fileID: 1049209609689035176, guid: d47e7d34e3c1b9345825660d5f924700, type: 3}

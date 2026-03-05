@@ -48,18 +48,16 @@ public class DefaultFood : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Interactable"))
         {
-            
-            
             PlateFood plateFood = collision.gameObject.GetComponent<PlateFood>();
             if (plateFood != null)
             {
-                for (int i = 0; i < plateFood.listFoodToRecipe.Count; i++)
+                for (int i = 0; i < plateFood.compatibleFoods.Count; i++)
                 {
-                    if (!plateFood.listFoodToRecipe[i].inPlate && foodData == plateFood.listFoodToRecipe[i].foodData && !inPlate)
+                    if (foodData == plateFood.compatibleFoods[i].ingredient 
+                        && plateFood.compatibleFoods[i].actualNumberIngredient < plateFood.compatibleFoods[i].numberIngredient)
                     {
-                        plateFood.listFoodToRecipe[i].inPlate = true;
-                        inPlate = true;
-                        plateFood.listFoodToRecipe[i].foodPrefab.SetActive(true);
+                        plateFood.compatibleFoods[i].actualNumberIngredient++;
+                        plateFood.NewFoodAdd();
                         gameObject.SetActive(false);
                     }
                 }

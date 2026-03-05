@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ff660c81e9c52f4287cc383cc146271, type: 3}
-  m_Name: Elliot
+  m_Name: Burger
   m_EditorClassIdentifier: Assembly-CSharp::FoodData
-  name: Elliot
-  prefab: {fileID: 0}
+  name: Pain a burger
+  prefab: {fileID: 5936670449386128558, guid: f9cedd060c14b62418800d5313847c25, type: 3}

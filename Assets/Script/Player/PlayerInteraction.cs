@@ -30,6 +30,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (hit.transform.gameObject.CompareTag("Interactable"))
             {
+                Debug.Log("Interactable");
                 VisualInterraction newInteraction = hit.transform.gameObject.GetComponent<VisualInterraction>();
                 if (newInteraction != lastInteraction && lastInteraction)
                 {

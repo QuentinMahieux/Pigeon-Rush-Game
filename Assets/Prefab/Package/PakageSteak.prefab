@@ -175,3 +175,5 @@ MonoBehaviour:
   meshRenderer: {fileID: 1378257315902094137}
   isStorage: 0
   foodDataKeep: {fileID: 3454647582579838424}
+  isNPC: 0
+  npcManager: {fileID: 0}

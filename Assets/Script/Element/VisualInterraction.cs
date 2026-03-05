@@ -24,7 +24,7 @@ public class VisualInterraction : MonoBehaviour
         originalMaterials =  meshRenderer.materials;
     }
     
-    public void ActiveOutLine()
+    public virtual void ActiveOutLine()
     {
         if (isGlow) { return; }
         isGlow = true;
@@ -39,7 +39,7 @@ public class VisualInterraction : MonoBehaviour
         meshRenderer.materials = newMaterials;
     }
 
-    public void DesactiveOutLine()
+    public virtual void DesactiveOutLine()
     {
         isGlow = false;
         meshRenderer.materials = originalMaterials;
