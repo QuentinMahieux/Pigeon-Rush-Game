@@ -189,6 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VisualInterraction
   meshRenderer: {fileID: 615051376055715989}
   isStorage: 0
-  foodDataKeep: {fileID: 0}
+  foodDataKeep: {fileID: 2629910770732384106}
   isNPC: 0
   npcManager: {fileID: 0}

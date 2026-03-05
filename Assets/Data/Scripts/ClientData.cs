@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ClientData", menuName = "Scriptable Objects/ClientData")]
 public class ClientData : ScriptableObject
 {
+    public int id;
     public Sprite icon;
-    public Recipe recipe;
+    public List<Ingredient> ingredientType;
 }

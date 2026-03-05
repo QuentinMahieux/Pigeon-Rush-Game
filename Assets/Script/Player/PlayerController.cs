@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     
     public Rigidbody rb;
     private Vector3 moveDirection;
+    public Camera camera;
 
     void Awake()
     {
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         moveDirection = vertical * transform.forward  + horizontal * transform.right;
         
         rb.MovePosition(rb.position + moveDirection * (Time.deltaTime * speed));
+        
         actualSpeed = (rb.position - lastSpeed).magnitude / Time.fixedDeltaTime;
         lastSpeed = rb.position;
         

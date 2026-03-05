@@ -11,6 +11,13 @@ public class FirstPersonCamera : MonoBehaviour //Se script doit être placer sur
     [Header("Cursor Settings")] 
     public bool isVisibleCursor;
 
+    [Header("Sneak Settings")] 
+    public Vector3 maxHead = new Vector3(0f, 0.52f, 0f);
+    public Vector3 minHead = new Vector3(0f, -0.31f, 0f);
+    private float sneackProgress = 0f;
+    public AnimationCurve sneackCurve;
+    public float multiSneakSpeed = 2f;
+
     void Awake()
     {
         if (!instance)
@@ -38,5 +45,17 @@ public class FirstPersonCamera : MonoBehaviour //Se script doit être placer sur
         transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
         
         player.Rotate(Vector3.up * inputX);
+
+        if (Input.GetKey(KeyCode.C) && sneackProgress < 1f)
+        {
+            sneackProgress += Time.deltaTime;
+        }
+        else if (sneackProgress > 0f)
+        {
+            sneackProgress -= Time.deltaTime;
+        }
+        
+        float smooth = Mathf.SmoothStep(0f, 1f, sneackProgress);
+        transform.localPosition = Vector3.Lerp(minHead, maxHead, sneackCurve.Evaluate(smooth * multiSneakSpeed));
     }
 }
