@@ -6,10 +6,17 @@ public class Table : MonoBehaviour
 {
     public string tableNumber;
     public ClientData actualClientData;
+    public GameObject commandDontListen;
 
+    [Header("Waiting")]
+    public Slider sliderWaiting;
+
+    private float remainingTime = 0f;
+    private bool isWaiting = false;
+
+    
     [Header("Visual elements")] 
     public TMP_Text textNumberTable;
-    public GameObject commandDontListen;
     public Image clientIcon;
 
     public void InstanciateTable(int newTableNumber)
@@ -22,22 +29,41 @@ public class Table : MonoBehaviour
         textNumberTable.text = tableNumber;
         commandDontListen.SetActive(false);
     }
+    
+    void LateUpdate()
+    {
+        if (remainingTime > 0 && isWaiting)
+        {
+            remainingTime -= Time.deltaTime;
+
+            sliderWaiting.value = remainingTime / LevelManager.instance.levelData.waitTimeClient;
+        }
+        else if (remainingTime <= 0 && isWaiting)
+        {
+            RemoveClient();
+        }
+    }
 
     public void AddClient(ClientData newClientData)
     {
         actualClientData = newClientData;
         clientIcon.sprite = actualClientData.icon;
+        remainingTime = LevelManager.instance.levelData.waitTimeClient;
+        isWaiting = true;
         
         LevelManager.instance.tableLibres.Remove(this);
         commandDontListen.SetActive(true);
+        CommandeManager.instance.AddCommande(this);
         Debug.Log("Client Added table:  " + tableNumber + " recipe: "+ actualClientData.name);
     }
 
-    public void RemoveClient(ClientData newClientData)
+    public void RemoveClient(int score = 0)
     {
         actualClientData = null;
         commandDontListen.SetActive(false);
         LevelManager.instance.tableLibres.Add(this);
+        
+        isWaiting = false;
     }
 
     void OnCollisionEnter(Collision collision)
@@ -48,8 +74,10 @@ public class Table : MonoBehaviour
             if (plateFood != null && plateFood.actualClientData.id == actualClientData.id)
             {
                 plateFood.gameObject.SetActive(false);
-                RemoveClient(actualClientData);
+                RemoveClient(actualClientData.score);
             }
         }
     }
+
+    
 }

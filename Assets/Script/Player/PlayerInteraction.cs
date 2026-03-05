@@ -43,17 +43,7 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    if (lastInteraction.isNPC)
-                    {
-                        lastInteraction.npcManager.StartDialogue();
-                    }
-                    else
-                    {
-                        PlayerHand.instance.TakeFood(lastInteraction);
-                    }
-                    
-                    
-                    
+                    PlayerHand.instance.TakeFood(lastInteraction, lastInteraction.isStorage);
                     //lastInteraction.DesactiveFood();
                 }
             }

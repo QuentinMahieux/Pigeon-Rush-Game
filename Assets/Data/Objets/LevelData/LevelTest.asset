@@ -15,5 +15,6 @@ MonoBehaviour:
   clients:
   - {fileID: 11400000, guid: d3f15169adcfef8469971f82f39372e6, type: 2}
   - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  timeIntervalClient: 0.76
+  waitTimeClient: 20.37
   timerLevel: 300
-  timeIntervalClient: 1

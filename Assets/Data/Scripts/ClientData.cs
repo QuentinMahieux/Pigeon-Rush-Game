@@ -7,4 +7,6 @@ public class ClientData : ScriptableObject
     public int id;
     public Sprite icon;
     public List<Ingredient> ingredientType;
+
+    public int score;
 }

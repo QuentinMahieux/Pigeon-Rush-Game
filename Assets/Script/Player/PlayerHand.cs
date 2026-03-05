@@ -29,23 +29,42 @@ public class PlayerHand : MonoBehaviour
         }
     }
     
-    public void TakeFood(VisualInterraction food)
+    public void TakeFood(VisualInterraction food, bool isStorage)
     {
         if (actualFood)
         {
             return;
         }
 
-        food.gameObject.transform.SetParent(hand);
-        food.gameObject.transform.localPosition = Vector3.zero;
+        if (isStorage)
+        {
+            GameObject newFoodGameObject = Instantiate(food.gameObject, hand, true);
+            VisualInterraction newFood = newFoodGameObject.GetComponent<VisualInterraction>();
+            newFoodGameObject.transform.localPosition = Vector3.zero;
             
-        food.foodDataKeep.boxCollider.enabled = false;
-        PlayerHand.instance.actualFood = food.foodDataKeep;
+            newFood.foodDataKeep.boxCollider.enabled = false;
+            PlayerHand.instance.actualFood = newFood.foodDataKeep;
         
-        food.foodDataKeep.rb.linearVelocity = Vector3.zero;
-        food.foodDataKeep.rb.angularVelocity = Vector3.zero;
-        food.foodDataKeep.rb.useGravity = false;
-        food.foodDataKeep.rb.constraints = RigidbodyConstraints.FreezeAll;
+            newFood.foodDataKeep.rb.linearVelocity = Vector3.zero;
+            newFood.foodDataKeep.rb.angularVelocity = Vector3.zero;
+            newFood.foodDataKeep.rb.useGravity = false;
+            newFood.foodDataKeep.rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+        else
+        {
+            food.gameObject.transform.SetParent(hand);
+            food.gameObject.transform.localPosition = Vector3.zero;
+            
+            food.foodDataKeep.boxCollider.enabled = false;
+            PlayerHand.instance.actualFood = food.foodDataKeep;
+        
+            food.foodDataKeep.rb.linearVelocity = Vector3.zero;
+            food.foodDataKeep.rb.angularVelocity = Vector3.zero;
+            food.foodDataKeep.rb.useGravity = false;
+            food.foodDataKeep.rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+        
+        
             
 
     }
