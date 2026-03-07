@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +17,9 @@ public class Table : MonoBehaviour
 
     [Header("End Repas")] 
     public Transform spawnPlateSale;
+    public float timeForEat = 2.5f;
     public FoodData plateSale;
+    public GameObject interfaceGameObject;
     
     [Header("Visual elements")] 
     public TMP_Text textNumberTable;
@@ -24,6 +27,7 @@ public class Table : MonoBehaviour
 
     public void InstanciateTable(int newTableNumber)
     {
+        isWaiting = false;
         tableNumber = newTableNumber.ToString();
         if (tableNumber.Length < 10)
         {
@@ -31,6 +35,7 @@ public class Table : MonoBehaviour
         }
         textNumberTable.text = tableNumber;
         commandDontListen.SetActive(false);
+        interfaceGameObject.SetActive(false);
     }
     
     void LateUpdate()
@@ -56,8 +61,18 @@ public class Table : MonoBehaviour
         
         LevelManager.instance.tableLibres.Remove(this);
         commandDontListen.SetActive(true);
+        interfaceGameObject.SetActive(true);
         CommandeManager.instance.AddCommande(this);
         Debug.Log("Client Added table:  " + tableNumber + " recipe: "+ actualClientData.name);
+    }
+
+    public void EatClient()
+    {
+        isWaiting = false;
+        interfaceGameObject.SetActive(false);
+        LevelManager.instance.AddScore(actualClientData.score);
+
+        
     }
 
     public void RemoveClient(int score = 0)
@@ -72,7 +87,6 @@ public class Table : MonoBehaviour
         if (score > 0)
         {
             Instantiate(plateSale.prefab, spawnPlateSale.position, spawnPlateSale.rotation);
-
         }
     }
 
@@ -83,11 +97,25 @@ public class Table : MonoBehaviour
             PlateFood plateFood = collision.gameObject.GetComponent<PlateFood>();
             if (plateFood != null && plateFood.actualClientData.id == actualClientData.id)
             {
-                plateFood.gameObject.SetActive(false);
-                RemoveClient(actualClientData.score);
+                StartCoroutine(TimeToEat(timeForEat, plateFood));
             }
         }
     }
 
+    IEnumerator TimeToEat(float time, PlateFood plateFood)
+    {
+        plateFood.transform.parent = spawnPlateSale;
+        plateFood.transform.localPosition = Vector3.zero;
+        plateFood.transform.localRotation = Quaternion.identity;
+        plateFood.rb.linearVelocity = Vector3.zero;
+        plateFood.rb.constraints = RigidbodyConstraints.FreezeRotation;
+        plateFood.rb.useGravity = false;
+        plateFood.boxCollider.enabled = false;
+        
+        EatClient();
+        yield return new WaitForSeconds(time);
+        plateFood.gameObject.SetActive(false);
+        RemoveClient(actualClientData.score);
+    }
     
 }

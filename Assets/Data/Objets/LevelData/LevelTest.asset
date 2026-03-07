@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
   timeIntervalClient: 13.1
   waitTimeClient: 40.8
-  timerLevel: 300
+  timerLevel: 60
+  starsPallier: 1e000000320000004b000000
