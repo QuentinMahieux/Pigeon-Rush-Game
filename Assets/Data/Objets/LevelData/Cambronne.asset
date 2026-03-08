@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f92bad42f5e989489e5b6de861288c0, type: 3}
+  m_Name: Cambronne
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Cambronne
+  clients:
+  - {fileID: 11400000, guid: d3f15169adcfef8469971f82f39372e6, type: 2}
+  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  numberDefaultClient: 1
+  courbeClientSpawn:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.45727015
+      value: 17.027143
+      inSlope: -0.1874085
+      outSlope: -0.1874085
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.13343179
+    - serializedVersion: 3
+      time: 71.92296
+      value: 11.773581
+      inSlope: -0.027293885
+      outSlope: -0.027293885
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1748297
+      outWeight: 0.16217817
+    - serializedVersion: 3
+      time: 180.07162
+      value: 6.4067154
+      inSlope: -0.14889263
+      outSlope: -0.14889263
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13999064
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  waitTimeClient: 30
+  timerLevel: 180
+  starsPallier: 1e000000320000004b000000

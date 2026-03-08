@@ -1,4 +1,5 @@
 using Unity.VectorGraphics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,10 +12,8 @@ public class StationMetro : MonoBehaviour
     public StationMetro Q;
     public StationMetro Z;
     public StationMetro S;
-    
-    [Header("Line Color")]
-    public Renderer[] lineRenderer;
-    public Material lineMaterial;
+
+    [Header("Line Color")] public LineRenderer[] lineRenderers;
     
     [Header("Score")]
     public bool isWin;
@@ -32,13 +31,7 @@ public class StationMetro : MonoBehaviour
 
     void Update()
     {
-        if (isWin)
-        {
-            foreach (Renderer r in lineRenderer)
-            {
-                r.material = lineMaterial;
-            }
-        }
+        
     }
 
     void RestorSave()
@@ -64,10 +57,17 @@ public class StationMetro : MonoBehaviour
             return;
         }
         isWin = true;
-        foreach (Renderer r in lineRenderer)
-        { 
-            r.material = lineMaterial;
+        foreach (LineRenderer line in lineRenderers)
+        {
+            line.lineRenderer.material = line.lineMaterial;
         }
         
+    }
+
+    [System.Serializable]
+    public class LineRenderer
+    {
+        public Renderer lineRenderer;
+        public Material lineMaterial;
     }
 }

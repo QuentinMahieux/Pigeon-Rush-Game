@@ -39,26 +39,26 @@ public class MetroController : MonoBehaviour
     
     void Update()
     {
-        if (!actualStation || !actualStation.isWin)
+        if (!actualStation)
         {
             return;
         }
         
         if (Input.GetKeyDown(KeyCode.D) && actualStation.D)
         {
-            SetDestination(actualStation.D.transform);
+            SetDestination(actualStation.D);
         }
         if (Input.GetKeyDown(KeyCode.A) && actualStation.Q)
         {
-            SetDestination(actualStation.Q.transform);
+            SetDestination(actualStation.Q);
         }
-        if (Input.GetKeyDown(KeyCode.W) && actualStation.Z)
+        if (Input.GetKeyDown(KeyCode.W)&& actualStation.Z)
         {
-            SetDestination(actualStation.Z.transform);
+            SetDestination(actualStation.Z);
         }
         if (Input.GetKeyDown(KeyCode.S) && actualStation.S)
         {
-            SetDestination(actualStation.S.transform);
+            SetDestination(actualStation.S);
         }
     }
 
@@ -75,9 +75,14 @@ public class MetroController : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(direction) * Quaternion.Euler(0, -90, 0);
     }
 
-    void SetDestination(Transform newDestination)
+    void SetDestination(StationMetro newDestination)
     {
-        destination = newDestination;
+        if (actualStation.isWin) {}
+        else if (!newDestination.isWin)
+        {
+            return;
+        }
+        destination = newDestination.transform;
         CameraFollow.instance.StopFollow();
 
     }

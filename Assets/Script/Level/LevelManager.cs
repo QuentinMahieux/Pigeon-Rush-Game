@@ -41,16 +41,11 @@ public class LevelManager : MonoBehaviour
             tableLibres.Add(table);
             table.InstanciateTable(index);
         }
-        StartCoroutine(SpawnTable());
 
         actualScore = 0;
         scoreText.text = actualScore.ToString();
-        
-        //Ajoute un nombre de client part defaut
-        for (int i = 0; i < levelData.numberDefaultClient; i++)
-        {
-            AddClientToTable();
-        }
+
+        StartCoroutine(DecompteToStart());
     }
 
     void Update()
@@ -93,5 +88,16 @@ public class LevelManager : MonoBehaviour
     public void QuitLevel()
     {
         SceneManager.LoadScene("SelectLevel");
+    }
+
+    IEnumerator DecompteToStart()
+    {
+        yield return new WaitForSeconds(3);
+        StartCoroutine(SpawnTable());
+        //Ajoute un nombre de client part defaut
+        for (int i = 0; i < levelData.numberDefaultClient; i++)
+        {
+            AddClientToTable();
+        }
     }
 }

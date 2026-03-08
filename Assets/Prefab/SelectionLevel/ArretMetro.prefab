@@ -541,9 +541,9 @@ MonoBehaviour:
   Q: {fileID: 0}
   Z: {fileID: 0}
   S: {fileID: 0}
-  lineRenderer:
-  - {fileID: 4882479672013731649}
-  lineMaterial: {fileID: 2100000, guid: d57106ddbba4cfe488a312ae19c18411, type: 2}
+  lineRenderers:
+  - lineRenderer: {fileID: 4882479672013731649}
+    lineMaterial: {fileID: 0}
   isWin: 0
   stars:
   - {fileID: 1353453909402324986}
@@ -569,5 +569,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.34444553, y: 1, z: 0.28978992}
+  m_Center: {x: -0.017382443, y: 0, z: -0.027610816}
