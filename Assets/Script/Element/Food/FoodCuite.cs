@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FoodCuite : DefaultFood
 {
@@ -10,10 +11,14 @@ public class FoodCuite : DefaultFood
     public float timeToHot;
     public float actualTimeToHot;
     [SerializeField] private bool isCooking;
+    
+    [Header("Interface")]
+    public Slider timeToHotSlider;
 
     void OnEnable()
     {
         isCooking = false;
+        timeToHotSlider.gameObject.SetActive(false);
     }
     
     private void OnCollisionStay(Collision collision)
@@ -22,6 +27,11 @@ public class FoodCuite : DefaultFood
         if (collision.gameObject.CompareTag(tagTransformator))
         {
             isCooking = true;
+            
+            if (timeToHotSlider)
+            {
+                timeToHotSlider.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -45,6 +55,20 @@ public class FoodCuite : DefaultFood
             Instantiate(newFoodPrefab, transform.position, transform.rotation);
             gameObject.SetActive(false);
         }
-        
+
+        if (timeToHotSlider)
+        {
+            timeToHotSlider.value = actualTimeToHot/timeToHot;
+        }
+    }
+
+    public override void isTaking()
+    {
+        base.isTaking();
+        isCooking = false;
+        if(timeToHotSlider)
+        {
+            timeToHotSlider.gameObject.SetActive(false);
+        }
     }
 }

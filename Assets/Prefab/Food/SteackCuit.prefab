@@ -177,7 +177,7 @@ MonoBehaviour:
   foodData: {fileID: 11400000, guid: 3fb52e0a65e061e4aada8c0740330dc2, type: 2}
   tagTransformator: Baking Tray
   newFoodPrefab: {fileID: 1407908730586343744, guid: 52ecf2bb045ef2c47ab67e36e6cb84d6, type: 3}
-  timeToHot: 6
+  timeToHot: 11
   actualTimeToHot: 0
   isCooking: 0
 --- !u!114 &-5207085853992089171

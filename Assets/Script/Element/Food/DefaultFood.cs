@@ -64,4 +64,9 @@ public class DefaultFood : MonoBehaviour
             }
         }
     }
+
+    public virtual void isTaking()
+    {
+        
+    }
 }

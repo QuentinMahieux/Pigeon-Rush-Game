@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -44,6 +45,12 @@ public class LevelManager : MonoBehaviour
 
         actualScore = 0;
         scoreText.text = actualScore.ToString();
+        
+        //Ajoute un nombre de client part defaut
+        for (int i = 0; i < levelData.numberDefaultClient; i++)
+        {
+            AddClientToTable();
+        }
     }
 
     void Update()
@@ -51,7 +58,7 @@ public class LevelManager : MonoBehaviour
         actualTime += Time.deltaTime;
         if (actualTime >= levelData.timerLevel)
         {
-            Debug.Log("Game Over");
+            ScoreManager.instance.AfficheScores(actualScore, levelData);
         }
         int remaining = (int)(levelData.timerLevel - actualTime);
         int minutes = remaining / 60;
@@ -64,11 +71,16 @@ public class LevelManager : MonoBehaviour
     {
         while (actualTime <= levelData.timerLevel)
         {
-            yield return new WaitForSeconds(levelData.timeIntervalClient);
-            if (tableLibres.Count > 0)
-            {
-                tableLibres[Random.Range(0, tableLibres.Count)].AddClient(levelData.clients[Random.Range(0, levelData.clients.Count)]);
-            }
+            yield return new WaitForSeconds(levelData.courbeClientSpawn.Evaluate(actualTime));
+            AddClientToTable();
+        }
+    }
+
+    void AddClientToTable()
+    {
+        if (tableLibres.Count > 0)
+        {
+            tableLibres[Random.Range(0, tableLibres.Count)].AddClient(levelData.clients[Random.Range(0, levelData.clients.Count)]);
         }
     }
 
@@ -76,5 +88,10 @@ public class LevelManager : MonoBehaviour
     {
         actualScore += score;
         scoreText.text = actualScore.ToString();
+    }
+    
+    public void QuitLevel()
+    {
+        SceneManager.LoadScene("SelectLevel");
     }
 }

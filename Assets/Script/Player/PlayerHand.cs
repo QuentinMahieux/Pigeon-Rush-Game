@@ -63,9 +63,10 @@ public class PlayerHand : MonoBehaviour
             food.foodDataKeep.rb.useGravity = false;
             food.foodDataKeep.rb.constraints = RigidbodyConstraints.FreezeAll;
         }
-        
-        
-            
+
+        food.foodDataKeep.isTaking();
+
+
 
     }
 }

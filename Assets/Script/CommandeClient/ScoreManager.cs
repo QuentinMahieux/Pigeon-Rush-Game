@@ -9,7 +9,6 @@ public class ScoreManager : MonoBehaviour
     public GameObject interfaceGameObject;
     
     [Header("Interface Score")]
-    [Header(" ")]
     [Header("Level Information")]
     public TMP_Text textLevelName;
     
@@ -42,11 +41,30 @@ public class ScoreManager : MonoBehaviour
         interfaceGameObject.SetActive(false);
     }
 
-    void AfficheScores()
+    public void AfficheScores(int score, LevelData levelData)
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         interfaceGameObject.SetActive(true);
-        textLevelName.text = LevelManager.instance.levelData.levelName;
+        textLevelName.text = levelData.levelName;
         
-        textScore.text = LevelManager.instance.actualScore.ToString();
+        textScore.text = score.ToString();
+        
+        SaveLevel.instance.NewScore(score, levelData);
+        
+        textBestScore.text = SaveLevel.instance.GetBestScore(levelData).ToString();
+
+        for (int i = 0; i < textStars.Length; i++)
+        {
+            textStars[i].text = levelData.starsPallier[i].ToString();
+            if (levelData.starsPallier[i] <= score)
+            {
+                imageStars[i].sprite = starWin;
+            }
+            else
+            {
+                imageStars[i].sprite = starLose;
+            }
+        }
     }
 }

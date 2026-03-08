@@ -6,8 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Level")]
-    public List<LevelData> allLevels = new List<LevelData>();
+    
     
     private void Awake()
     {
@@ -21,11 +20,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        Application.targetFrameRate = 60;
     }
 
     void Start()
     {
-        
     }
 
     void Update()

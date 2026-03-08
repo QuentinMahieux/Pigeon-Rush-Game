@@ -9,8 +9,9 @@ public class LevelData : ScriptableObject
     
     [Header("Client Settings")]
     public List<ClientData> clients;
-    [Tooltip("Intervale de temps entre le spawn de 2 client")] 
-    public float timeIntervalClient = 25;
+    public int numberDefaultClient = 1;
+    [Tooltip("Courbe de l'intervale de temps en chaque apparisionde client, abscisse: Temps en seconde, ordonnée; temps d'attente entre 2 client ")] 
+    public AnimationCurve courbeClientSpawn;
     public float waitTimeClient = 10.5f;
     
     [Header("Time Settings")]
