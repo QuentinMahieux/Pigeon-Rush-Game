@@ -7,6 +7,7 @@ public class Package : DefaultFood
     public int numberElementSpawn;
     public FoodData elementToSpawn;
     private bool isDestroyed = false;
+    public string tagElementToDestroy = "Rock";
     
 
     protected override void OnCollisionEnter(Collision collision)
@@ -15,7 +16,7 @@ public class Package : DefaultFood
         
         float numberToInstantiate = numberElementSpawn;
         VisualInterraction elementReInstanciate = null;
-        if (!collision.gameObject.CompareTag("Player") && !isDestroyed)
+        if (collision.gameObject.CompareTag(tagElementToDestroy) && !isDestroyed)
         {
             isDestroyed = true;
             for (int i = 0; i < numberToInstantiate; i++)

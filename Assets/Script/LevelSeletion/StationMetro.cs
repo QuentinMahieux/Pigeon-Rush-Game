@@ -27,6 +27,11 @@ public class StationMetro : MonoBehaviour
             SaveLevel.instance.SetSave(levelData);
             RestorSave();
         }
+
+        if (isWin)
+        {
+            LevelWin();
+        }
     }
 
     void Update()
@@ -52,16 +57,11 @@ public class StationMetro : MonoBehaviour
 
     void LevelWin()
     {
-        if (isWin)
-        {
-            return;
-        }
         isWin = true;
         foreach (LineRenderer line in lineRenderers)
         {
             line.lineRenderer.material = line.lineMaterial;
         }
-        
     }
 
     [System.Serializable]

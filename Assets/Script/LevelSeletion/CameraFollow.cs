@@ -49,4 +49,9 @@ public class CameraFollow : MonoBehaviour
         mainCamera.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
+    
+    public void PressStartButton()
+    {
+        GameManager.instance.StartLevel();
+    }
 }

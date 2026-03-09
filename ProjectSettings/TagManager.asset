@@ -10,6 +10,7 @@ TagManager:
   - DontClimb
   - Lavabeau
   - StationMetro
+  - Rock
   layers:
   - Default
   - TransparentFX

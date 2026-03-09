@@ -24,7 +24,7 @@ public class SaveLevel : MonoBehaviour
         if (!PlayerPrefs.HasKey(level.levelName))
         {
             PlayerPrefs.SetInt(level.levelName, 0);
-            Debug.Log(level.levelName + " has been saved.");
+            Debug.Log("💾 " + level.levelName + " has been saved.");
         }
         Save();
     }
@@ -35,6 +35,7 @@ public class SaveLevel : MonoBehaviour
         if (score > PlayerPrefs.GetInt(level.levelName))
         {
             PlayerPrefs.SetInt(level.levelName, score);
+            Debug.Log(level.levelName + " best score: "  + score);
         }
         Save();
     }
@@ -47,12 +48,38 @@ public class SaveLevel : MonoBehaviour
             PlayerPrefs.DeleteAll();
         }
         PlayerPrefs.Save();
-        Debug.Log("✅ Game saved.");
+        Debug.Log("💾 Game saved.");
     }
     
     //Revoit le meillieux score pour un niveau
     public int GetBestScore(LevelData level)
     {
+        Debug.Log("Return Best score");
         return PlayerPrefs.GetInt(level.levelName);
+    }
+
+    public void SetSaveCoordonne(string coordoneeName, float coordoneeFloat)
+    {
+        if (!PlayerPrefs.HasKey(coordoneeName))
+        {
+            PlayerPrefs.SetFloat(coordoneeName, coordoneeFloat);
+        }
+        else
+        {
+            NewCoordonee(coordoneeName, coordoneeFloat);
+        }
+        Save();
+    }
+    
+    public void NewCoordonee(string coordoneeName, float coordoneeFloat)
+    {
+        PlayerPrefs.SetFloat(coordoneeName, coordoneeFloat);
+        Save();
+    }
+
+    public float GetCoordonee(string coordoneeName)
+    {
+        Debug.Log("📥 Return Coordonee " + coordoneeName);
+        return PlayerPrefs.GetFloat(coordoneeName);
     }
 }

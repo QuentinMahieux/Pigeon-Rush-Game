@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff660c81e9c52f4287cc383cc146271, type: 3}
+  m_Name: NoixDeCocoBriser
+  m_EditorClassIdentifier: Assembly-CSharp::FoodData
+  name: "noix de coco bris\xE9"
+  prefab: {fileID: 2185267544406704879, guid: 3f8e63e1fd5e9c6488603a2bd1116791, type: 3}

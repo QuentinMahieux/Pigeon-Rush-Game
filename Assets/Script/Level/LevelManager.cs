@@ -34,6 +34,8 @@ public class LevelManager : MonoBehaviour
     }
     void Start()
     {
+        levelData = GameManager.instance.levelSelect;
+        
         int index = 0;
         foreach (Table table in allTable.GetComponentsInChildren<Table>())
         {

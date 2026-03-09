@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
+    
+    public LevelData levelSelect;
     
     
     private void Awake()
@@ -23,12 +25,21 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
     }
 
-    void Start()
+    public void StartLevel()
     {
+        LevelData newlevelSelect = MetroController.instance.actualStation.levelData;
+        levelSelect = newlevelSelect;
+
+        MetroController.instance.SetCoordonee();
+        
+        SceneManager.LoadScene(newlevelSelect.levelName);
     }
 
-    void Update()
+    void OnApplicationQuit()
     {
-        
+        if (MetroController.instance)
+        {
+            MetroController.instance.SetCoordonee();
+        }
     }
 }
