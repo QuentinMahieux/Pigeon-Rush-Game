@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: "steak hach\xE9 cuit"
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: 761a4584076a36942b1e32d5d51afd06, type: 3}
   prefab: {fileID: 8323963127625260304, guid: dc15d7e22d4c53543adac7ee2faa0308, type: 3}

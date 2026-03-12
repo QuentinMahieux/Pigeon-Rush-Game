@@ -17,12 +17,15 @@ MonoBehaviour:
   ingredientType:
   - numberIngredient: 1
     actualNumberIngredient: 0
+    ingredient: {fileID: 11400000, guid: c3443fd99c3adc34c956695d82aa4bb2, type: 2}
+  - numberIngredient: 1
+    actualNumberIngredient: 0
+    ingredient: {fileID: 11400000, guid: 753b03f5fac8bb944a8c13c089efb163, type: 2}
+  - numberIngredient: 1
+    actualNumberIngredient: 0
     ingredient: {fileID: 11400000, guid: a772c3b53a77d1c4cb7f56e048e1b870, type: 2}
   - numberIngredient: 0
     actualNumberIngredient: 0
     ingredient: {fileID: 11400000, guid: 3fb52e0a65e061e4aada8c0740330dc2, type: 2}
-  - numberIngredient: 1
-    actualNumberIngredient: 0
-    ingredient: {fileID: 11400000, guid: 753b03f5fac8bb944a8c13c089efb163, type: 2}
   plateSale: {fileID: 11400000, guid: 5033b216a26ca2340af71b1b36993fad, type: 2}
   score: 0

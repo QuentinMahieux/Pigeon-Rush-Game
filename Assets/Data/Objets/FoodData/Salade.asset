@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: salade
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: b69141cc2ce92794f9c5f739b7cb2e66, type: 3}
   prefab: {fileID: 6482204688945183865, guid: 409f5e0dca677074f8f09d6eb58f0778, type: 3}

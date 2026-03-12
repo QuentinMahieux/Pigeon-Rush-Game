@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: 'petit pain '
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: 88c0e15e5e8d6e24eb5c242bd5e9096f, type: 3}
   prefab: {fileID: 5936670449386128558, guid: f9cedd060c14b62418800d5313847c25, type: 3}

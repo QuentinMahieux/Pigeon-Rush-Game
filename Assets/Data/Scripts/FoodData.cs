@@ -4,6 +4,7 @@ using UnityEngine;
 public class FoodData : ScriptableObject
 {
     public StringTranslate[] name;
+    public Sprite sprite;
     
     public GameObject prefab;
 }

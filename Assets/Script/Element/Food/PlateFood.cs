@@ -62,6 +62,6 @@ public class Recipe
 public class Ingredient
 {
     public int numberIngredient;
-    [HideInInspector] public int actualNumberIngredient;
+    public int actualNumberIngredient;
     public FoodData ingredient;
 }

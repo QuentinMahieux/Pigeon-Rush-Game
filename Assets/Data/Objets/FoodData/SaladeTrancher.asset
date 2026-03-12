@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: "salade tranch\xE9"
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: 3d79db7b04c3bf241a5565a264c69214, type: 3}
   prefab: {fileID: 7055972157478526317, guid: 715bc9243547ebe498f1cecbdf78b7d1, type: 3}

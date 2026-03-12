@@ -18,12 +18,14 @@ public class FoodCuite : DefaultFood
     [Header("Particle Systeme")] 
     public ParticleSystem[] particleHot;
 
+    
     void OnEnable()
     {
         isCooking = false;
         timeToHotSlider.gameObject.SetActive(false);
         foreach (ParticleSystem particle in particleHot)
         {
+            particle.enableEmission = false;
             particle.Stop();
         }
     }
@@ -41,6 +43,7 @@ public class FoodCuite : DefaultFood
             }
             foreach (ParticleSystem particle in particleHot)
             {
+                particle.enableEmission = true;
                 particle.Play();
             }
         }

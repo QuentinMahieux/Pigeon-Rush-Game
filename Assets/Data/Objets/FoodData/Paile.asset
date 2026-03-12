@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: paille
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: 3f19ec7a7f4151947a31821c7bcb6169, type: 3}
   prefab: {fileID: 1797323183418127442, guid: 1fc0d6162006bb74b840e2959418a808, type: 3}

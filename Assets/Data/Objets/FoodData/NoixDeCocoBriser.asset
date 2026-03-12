@@ -17,4 +17,5 @@ MonoBehaviour:
     language: {fileID: 11400000, guid: ce331176d60e9014a81d98ff01935e33, type: 2}
   - text: "noix de coco bris\xE9"
     language: {fileID: 11400000, guid: 7b57e7c213a8c5244bf5522d5a4a742f, type: 2}
+  sprite: {fileID: 21300000, guid: 7b9e0922fe26c284982c4a457f1bd4ab, type: 3}
   prefab: {fileID: 2185267544406704879, guid: 3f8e63e1fd5e9c6488603a2bd1116791, type: 3}
