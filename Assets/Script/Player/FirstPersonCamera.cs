@@ -5,7 +5,6 @@ public class FirstPersonCamera : MonoBehaviour //Se script doit être placer sur
     public static FirstPersonCamera instance;
     [Tooltip("Ratacher la camera au player")]
     public Transform player;
-    public float mouseSensitivity = 2;
     private float cameraVerticalRotation = 0f;
 
     [Header("Cursor Settings")] 
@@ -38,7 +37,8 @@ public class FirstPersonCamera : MonoBehaviour //Se script doit être placer sur
     void Update()
     {
         if (GameManager.instance.isPause) return;
-        
+
+        float mouseSensitivity = GameManager.instance.senssibility;
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
         

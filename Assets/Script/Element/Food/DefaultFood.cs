@@ -35,6 +35,8 @@ public class DefaultFood : MonoBehaviour
 
     public void ThrowFood()
     {
+        if(GameManager.instance.isPause) return;
+
         transform.SetParent(null);
         PlayerHand.instance.actualFood = null;
 

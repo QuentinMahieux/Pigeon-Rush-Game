@@ -6,7 +6,7 @@ public class TranslatText : MonoBehaviour
 {
     public List<StringTranslate> stringTranslate;
     public TMP_Text text;
-    void OnEnable()
+    void Update()
     {
         foreach (StringTranslate st in stringTranslate)
         {

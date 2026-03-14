@@ -88,4 +88,19 @@ public class SaveLevel : MonoBehaviour
         Debug.Log("📥 Return Coordonee " + coordoneeName);
         return PlayerPrefs.GetFloat(coordoneeName);
     }
+    
+    public void SetSaveFloat(string coordoneeName, float coordoneeFloat)
+    {
+        if (!PlayerPrefs.HasKey(coordoneeName))
+        {
+            PlayerPrefs.SetFloat(coordoneeName, coordoneeFloat);
+        }
+        Save();
+    }
+    
+    public void NewFloat(string coordoneeName, float coordoneeFloat)
+    {
+        PlayerPrefs.SetFloat(coordoneeName, coordoneeFloat);
+        Save();
+    }
 }

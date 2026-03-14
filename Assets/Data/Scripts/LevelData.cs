@@ -6,6 +6,7 @@ public class LevelData : ScriptableObject
 {
     [Header("Information")] 
     public string levelName = "L0-0";
+    public Sprite sprite;
     
     [Header("Client Settings")]
     public List<ClientData> clients;

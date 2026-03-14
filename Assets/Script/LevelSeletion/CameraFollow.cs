@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -12,7 +13,9 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Interface")] 
     public TMP_Text nameLevel;
+    public Image imageLevel;
     public TMP_Text bestScore;
+    public TMP_Text nextScore;
     
     
     private void Awake()
@@ -39,9 +42,7 @@ public class CameraFollow : MonoBehaviour
         mainCamera.gameObject.SetActive(false);
         cinemachineCamera.Follow = target;
         
-        nameLevel.text = levelData.levelName;
-        Debug.Log(levelData.levelName);
-        bestScore.text = SaveLevel.instance.GetInt(levelData.levelName).ToString();
+        RefreshInterface(levelData);
     }
 
     public void StopFollow()
@@ -53,5 +54,25 @@ public class CameraFollow : MonoBehaviour
     public void PressStartButton()
     {
         GameManager.instance.StartLevel();
+    }
+    
+    void RefreshInterface(LevelData levelData)
+    {
+        nameLevel.text = levelData.levelName;
+        imageLevel.sprite = levelData.sprite;
+        
+
+        bestScore.text = SaveLevel.instance.GetInt(levelData.levelName).ToString();
+
+        nextScore.gameObject.SetActive(false);
+        foreach (int pallier in levelData.starsPallier)
+        {
+            if (SaveLevel.instance.GetInt(levelData.levelName) <= pallier)
+            {
+                nextScore.gameObject.SetActive(true);
+                nextScore.text = pallier.ToString();
+                break;
+            }
+        }
     }
 }

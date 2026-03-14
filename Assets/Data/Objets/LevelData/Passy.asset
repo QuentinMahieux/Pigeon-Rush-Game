@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Passy
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Passy
+  sprite: {fileID: 21300000, guid: 407a1c412f4ab7548942bf9dc85bcfb0, type: 3}
   clients:
   - {fileID: 11400000, guid: d3f15169adcfef8469971f82f39372e6, type: 2}
   - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}

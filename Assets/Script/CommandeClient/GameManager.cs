@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
     [Header("Performance")] 
     public int currentFPS = 60;
     
+    [Header("Audio")] 
+    public float audioVolume = 0.5f;
+
+    [Header("Senssibilty")] 
+    public float senssibility = 2.5f;
+    
     private void Awake()
     {
         if (instance == null)
@@ -34,7 +40,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = currentFPS;
     }
 
     void Start()
@@ -53,10 +59,14 @@ public class GameManager : MonoBehaviour
             }
         }
         
-        //FPS
-        SaveLevel.instance.SetString("FPSSetting", currentFPS);
-        currentFPS = SaveLevel.instance.GetInt("FPSSetting");
-
+        //Audio
+        SaveLevel.instance.SetSaveFloat("AudioSetting", audioVolume);
+        AudioMananger.instance.PlayAudio(AudioMananger.instance.audioSeletLevel);
+        ChangeAudio(SaveLevel.instance.GetCoordonee("AudioSetting"));
+        
+        //Cursor
+        SaveLevel.instance.SetSaveFloat("SensibilitySetting", senssibility);
+        ChangeSenssibilty(SaveLevel.instance.GetCoordonee("SensibilitySetting"));
     }
 
     public void StartLevel()
@@ -64,6 +74,8 @@ public class GameManager : MonoBehaviour
         LevelData newlevelSelect = MetroController.instance.actualStation.levelData;
         levelSelect = newlevelSelect;
 
+        AudioMananger.instance.PlayAudio(AudioMananger.instance.audioGame);
+        
         MetroController.instance.SetCoordonee();
         
         SceneManager.LoadScene(newlevelSelect.levelName);
@@ -83,9 +95,15 @@ public class GameManager : MonoBehaviour
         SaveLevel.instance.NewInt( "languageSetting", language.id);
     }
 
-    public void ChangeFPS(int newvalue)
+    public void ChangeAudio(float volume)
     {
-        SaveLevel.instance.NewInt("FPSSetting", newvalue);
-        currentFPS = newvalue;
+        AudioMananger.instance.ChangeVolume(volume);
+        SaveLevel.instance.NewFloat("AudioSetting", volume);
+    }
+    
+    public void ChangeSenssibilty(float newSenssibility)
+    {
+        SaveLevel.instance.NewFloat("SensibilitySetting", newSenssibility);
+        senssibility = SaveLevel.instance.GetCoordonee("SensibilitySetting");
     }
 }
