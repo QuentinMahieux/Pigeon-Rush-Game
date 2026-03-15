@@ -582,6 +582,8 @@ MonoBehaviour:
   - {fileID: 9008421758635223513}
   - {fileID: 5894635728502287676}
   winSprite: {fileID: 21300000, guid: 890d89053cc84ea49a281981143226db, type: 3}
+  isLock: 0
+  nbrUnlock: 0
 --- !u!65 &2233763086831774012
 BoxCollider:
   m_ObjectHideFlags: 0

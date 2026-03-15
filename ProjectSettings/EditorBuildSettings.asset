@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ligne 9/Trocadero.unity
     guid: ba012a3973a29fa4e830b8f59a3e0aa6
+  - enabled: 1
+    path: Assets/Scenes/Ligne 6/Duplex.unity
+    guid: a342cc67b5b6db44e9e77fb1e726a921
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

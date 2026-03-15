@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (7)
@@ -142,6 +150,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (4)
@@ -220,6 +236,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (2)
@@ -298,6 +322,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (5)
@@ -376,6 +408,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (6)
@@ -454,6 +494,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow
@@ -532,10 +580,50 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2124017756626555189, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2124017756626555189, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: aa3398ce925057846a7b6549c66fe0be, type: 2}
+    - target: {fileID: 705525777829356259, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 705525777829356259, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
     - target: {fileID: 919132149155446097, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
       propertyPath: m_Name
       value: parisianFacade
       objectReference: {fileID: 0}
+    - target: {fileID: 2837822783239332652, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837822783239332652, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
+    - target: {fileID: 5172468018601190562, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172468018601190562, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
+    - target: {fileID: 6846996722807762556, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846996722807762556, guid: d9701d36286ceeb4fa9acd183b01fa2e, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -664,6 +752,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (1)
@@ -742,6 +838,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -8750269933472188217, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
     - target: {fileID: 919132149155446097, guid: 4b11ccfa56935d24cbd8e9bc829cdc7a, type: 3}
       propertyPath: m_Name
       value: parisianWindow (3)

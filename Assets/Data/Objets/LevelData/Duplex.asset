@@ -15,15 +15,18 @@ MonoBehaviour:
   levelName: Duplex
   sprite: {fileID: 21300000, guid: 5267d3fd4f937294cb60a102cddec3b9, type: 3}
   clients:
-  - {fileID: 11400000, guid: d3f15169adcfef8469971f82f39372e6, type: 2}
-  - {fileID: 11400000, guid: eee291456253c6042a16bcbe20c1df6e, type: 2}
-  numberDefaultClient: 2
+  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  - {fileID: 11400000, guid: 9355ca98f7f97fd44b2f29854e641ce1, type: 2}
+  - {fileID: 11400000, guid: 9355ca98f7f97fd44b2f29854e641ce1, type: 2}
+  - {fileID: 11400000, guid: 9355ca98f7f97fd44b2f29854e641ce1, type: 2}
+  numberDefaultClient: 1
   courbeClientSpawn:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.45679998
-      value: 14.958441
+      time: -1.3852247
+      value: 15.184383
       inSlope: -0.0037516581
       outSlope: -0.0037516581
       tangentMode: 0
@@ -31,26 +34,26 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.284475
     - serializedVersion: 3
-      time: 92.03252
-      value: 9.867758
-      inSlope: -0.018428527
-      outSlope: -0.018428527
+      time: 15.358231
+      value: 9.952475
+      inSlope: -0.06282281
+      outSlope: -0.06282281
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.1748297
-      outWeight: 0.12210091
+      inWeight: 0.587445
+      outWeight: 0.10830131
     - serializedVersion: 3
-      time: 182.35681
-      value: 5.7877274
-      inSlope: 0.015273996
-      outSlope: 0.015273996
+      time: 122.26074
+      value: 6.3949356
+      inSlope: 0.015583671
+      outSlope: 0.015583671
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.14167835
+      inWeight: 0.17446296
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  waitTimeClient: 45
-  timerLevel: 180
-  starsPallier: 320000004600000064000000
+  waitTimeClient: 37
+  timerLevel: 120
+  starsPallier: 5000000078000000a0000000

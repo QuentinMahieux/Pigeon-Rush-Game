@@ -67,4 +67,9 @@ public class ScoreManager : MonoBehaviour
             }
         }
     }
+
+    public void CloseMenu()
+    {
+        LevelManager.instance.QuitLevel();
+    }
 }

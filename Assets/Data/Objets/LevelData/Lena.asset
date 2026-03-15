@@ -10,15 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f92bad42f5e989489e5b6de861288c0, type: 3}
-  m_Name: Trocadero
+  m_Name: Lena
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Trocadero
-  sprite: {fileID: 21300000, guid: 1c3bd4922850aa340bdc3f7447258b41, type: 3}
-  clients:
-  - {fileID: 11400000, guid: d3f15169adcfef8469971f82f39372e6, type: 2}
-  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
-  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
-  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  levelName: "L\xE9na"
+  sprite: {fileID: 0}
+  clients: []
   numberDefaultClient: 1
   courbeClientSpawn:
     serializedVersion: 2
