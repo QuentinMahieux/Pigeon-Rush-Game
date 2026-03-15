@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Ligne 6/Broussi\xE8re.unity"
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Motte-Picquet Grenelle.unity
+    path: Assets/Scenes/Ligne10/Motte-Picquet Grenelle.unity
     guid: a907e8dd9d3f1764ba5a1200f2b3d859
   - enabled: 1
     path: Assets/Scenes/Ligne 9/Trocadero.unity
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ligne 6/Duplex.unity
     guid: a342cc67b5b6db44e9e77fb1e726a921
+  - enabled: 1
+    path: Assets/Scenes/Ligne10/Avenue Emille Zola.unity
+    guid: c5f7744b04a1a45438eac2ce15bf2d7d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

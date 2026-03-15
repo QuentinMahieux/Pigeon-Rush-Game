@@ -545,6 +545,7 @@ MonoBehaviour:
   commandDontListen: {fileID: 7951938624119054111}
   sliderWaiting: {fileID: 3481143381165949133}
   spawnPlateSale: {fileID: 8984887219536410741}
+  spawnPlate: {fileID: 4745527788016823480}
   timeForEat: 5
   interfaceGameObject: {fileID: 7445505007117223249}
   textNumberTable: {fileID: 7666257449891190091}

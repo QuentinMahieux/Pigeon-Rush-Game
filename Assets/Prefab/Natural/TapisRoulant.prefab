@@ -167,7 +167,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 254bee0d4ff492c4ab1ef818a78d9939, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9f47fc54757748e4497b9f0464c0da60, type: 2}
+      objectReference: {fileID: 2100000, guid: aa3398ce925057846a7b6549c66fe0be, type: 2}
     - target: {fileID: 919132149155446097, guid: 254bee0d4ff492c4ab1ef818a78d9939, type: 3}
       propertyPath: m_Name
       value: TapisRoulant

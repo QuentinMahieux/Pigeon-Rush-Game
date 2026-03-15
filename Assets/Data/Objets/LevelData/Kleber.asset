@@ -23,8 +23,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.45680195
-      value: 20.431545
+      time: -0.9020428
+      value: 12.115799
       inSlope: -0.009674687
       outSlope: -0.009674687
       tangentMode: 0
@@ -32,8 +32,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.26428142
     - serializedVersion: 3
-      time: 153.81194
-      value: 7.613898
+      time: 125.47036
+      value: 7.6335564
       inSlope: 0.0032868066
       outSlope: 0.0032868066
       tangentMode: 0
@@ -43,6 +43,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  waitTimeClient: 45
+  waitTimeClient: 55
   timerLevel: 120
   starsPallier: 320000004600000078000000

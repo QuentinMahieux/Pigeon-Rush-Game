@@ -97,7 +97,6 @@ public class MetroController : MonoBehaviour
 
         destination = newDestination.transform;
         CameraFollow.instance.StopFollow();
-        actualStation = null;
 
     }
 
