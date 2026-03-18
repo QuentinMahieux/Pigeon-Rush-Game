@@ -28,7 +28,10 @@ EditorBuildSettings:
     guid: a342cc67b5b6db44e9e77fb1e726a921
   - enabled: 1
     path: Assets/Scenes/Ligne10/Avenue Emille Zola.unity
-    guid: c5f7744b04a1a45438eac2ce15bf2d7d
+    guid: e5a325c5a83dd364699c470b547f311b
+  - enabled: 1
+    path: "Assets/Scenes/Ligne 9/L\xE9na.unity"
+    guid: a015f30c6baee4f4999de93bc8b25635
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
