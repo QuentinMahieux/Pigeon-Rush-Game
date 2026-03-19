@@ -6,6 +6,7 @@ public class PauseMenuManager : MonoBehaviour
 {
     public static PauseMenuManager instance;
 
+    public bool isNoPause;
     public bool isCursor;
     public GameObject pauseMenu;
     public GameObject secondaireMenu;
@@ -27,6 +28,8 @@ public class PauseMenuManager : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         secondaireMenu.SetActive(false);
+        
+        if (isNoPause) secondaireMenu.SetActive(true);
     }
 
     void Update()
@@ -64,7 +67,8 @@ public class PauseMenuManager : MonoBehaviour
         GameManager.instance.isPause = false;
         Time.timeScale = 1;
         
-        Application.Quit();
+        MetroController.instance.SetCoordonee();
+        SceneManager.LoadScene("Scenes/MainScene");
     }
     
 

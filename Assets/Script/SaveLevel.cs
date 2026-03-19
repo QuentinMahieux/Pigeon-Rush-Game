@@ -47,9 +47,9 @@ public class SaveLevel : MonoBehaviour
     }
 
     //Sauvegarde les informations
-    public void Save()
+    public void Save(bool save = true)
     {
-        if (NoSave)
+        if (!save)
         {
             PlayerPrefs.DeleteAll();
         }

@@ -45,6 +45,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        StartGame();
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        StartGame();
+    }
+
+    void StartGame()
+    {
         //Language
         if (language)
         {

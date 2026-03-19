@@ -13,33 +13,36 @@ MonoBehaviour:
   m_Name: Lena
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: "L\xE9na"
-  sprite: {fileID: 0}
-  clients: []
-  numberDefaultClient: 1
+  sprite: {fileID: 21300000, guid: e047b79ee6242b748b884487030165c2, type: 3}
+  clients:
+  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  - {fileID: 11400000, guid: fc31bee915178dd43a3b13a50a543b9c, type: 2}
+  - {fileID: 11400000, guid: 9355ca98f7f97fd44b2f29854e641ce1, type: 2}
+  numberDefaultClient: 0
   courbeClientSpawn:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -1.730535
-      value: 6.905834
-      inSlope: -0.013935648
-      outSlope: -0.013935648
+      time: -4.5160484
+      value: 13.215217
+      inSlope: 0.0003130791
+      outSlope: 0.0003130791
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.100786835
+      outWeight: 0.124050595
     - serializedVersion: 3
-      time: 181.37234
-      value: 4.834258
-      inSlope: -0.008092982
-      outSlope: -0.008092982
+      time: 191.31332
+      value: 8.255888
+      inSlope: -0.047373183
+      outSlope: -0.047373183
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.14840943
+      inWeight: 0.07215187
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   waitTimeClient: 50
   timerLevel: 180
-  starsPallier: 3c0000006e00000096000000
+  starsPallier: 3c0000006e00000078000000

@@ -65,6 +65,7 @@ public class DefaultFood : MonoBehaviour
                     if (foodData == plateFood.compatibleFoods[i].ingredient 
                         && plateFood.compatibleFoods[i].actualNumberIngredient < plateFood.compatibleFoods[i].numberIngredient)
                     {
+                        boxCollider.enabled = false;
                         plateFood.compatibleFoods[i].actualNumberIngredient++;
                         plateFood.NewFoodAdd();
                         gameObject.SetActive(false);
