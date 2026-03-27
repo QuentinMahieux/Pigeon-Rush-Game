@@ -560,11 +560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -1835,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -2975,7 +2975,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019520237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3765,7 +3765,7 @@ PrefabInstance:
       objectReference: {fileID: 2134158544}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -4095,7 +4095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -4381,7 +4381,7 @@ PrefabInstance:
       objectReference: {fileID: 1537992516}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -4783,11 +4783,11 @@ PrefabInstance:
       objectReference: {fileID: 794796133}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isLock
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData
@@ -4908,7 +4908,7 @@ PrefabInstance:
       objectReference: {fileID: 1840168039}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: isWin
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5905711980488013810, guid: fbc9bf78ddf1b654c9c2c6951183a575, type: 3}
       propertyPath: levelData

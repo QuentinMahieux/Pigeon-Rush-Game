@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6db9eeaa99a9b83449b98d1376f35a33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Package
-  speed: 5
+  speed: 6.91
   rb: {fileID: 8375543830472112015}
   boxCollider: {fileID: 4719428401784983204}
   foodData: {fileID: 11400000, guid: 4990dd592f21ae04281d07f6ab3668a0, type: 2}
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03b9ccee3e623140ba5c6e449f73220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultFood
-  speed: 5
+  speed: 6.46
   rb: {fileID: 8375543830472112015}
   boxCollider: {fileID: 4719428401784983204}
   foodData: {fileID: 11400000, guid: 4990dd592f21ae04281d07f6ab3668a0, type: 2}
